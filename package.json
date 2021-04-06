@@ -1,0 +1,26 @@
+{
+  "name": "mnemosynes-notepad",
+  "version": "1.0.0",
+  "description": "Web app that lets you write and save notes",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TadhgMc/mnemosynes-notepad.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TadhgMc/mnemosynes-notepad/issues"
+  },
+  "homepage": "https://github.com/TadhgMc/mnemosynes-notepad#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
