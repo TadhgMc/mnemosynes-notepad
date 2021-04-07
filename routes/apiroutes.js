@@ -1,5 +1,5 @@
 const path = require('path');
-const db = require('db.json');
+const db = require('../db/db.json');
 
 module.exports = (app) => {
     app.get('/api/notes', (req, res) => res.json(db));
@@ -8,5 +8,6 @@ module.exports = (app) => {
         //input code here that adds the post to the data base
         const newNote = req.body;
         db.push(newNote);
+        res.json(true);
     })
 }
