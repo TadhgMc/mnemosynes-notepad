@@ -1,10 +1,12 @@
 const path = require('path');
+const db = require('db.json');
 
 module.exports = (app) => {
-    app.get('/', (req, res) => {
-        res.sendFile(path.join(__dirname, '../public/index.html'));
-    });
-    app.get('/notes', (req, res) => {
-        res.sendFile(path.join(__dirname, '../public/notes.html'));
-    });
+    app.get('/api/notes', (req, res) => res.json(db));
+
+    app.post('/api/notes', (req, res) => {
+        //input code here that adds the post to the data base
+        const newNote = req.body;
+        db.push(newNote);
+    })
 }
