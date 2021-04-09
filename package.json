@@ -2,9 +2,10 @@
   "name": "mnemosynes-notepad",
   "version": "1.0.0",
   "description": "Web app that lets you write and save notes",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
